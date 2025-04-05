@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>h</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: skyblue;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <script>
+        // 获取Canvas元素
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        // 设置Canvas尺寸为窗口大小
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // 字符集（可以自定义）
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+
+        // 列宽和下落速度配置
+        const fontSize = 20;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = [];
+
+        // 初始化每列的起始位置
+        for (let i = 0; i < columns; i++) {
+            drops[i] = 1;
+        }
+
+        // 颜色配置（RGB格式）
+        const textColor = [53, 105, 206]; // 经典绿色
+
+        // 绘制函数
+        function draw() {
+            // 半透明背景（实现拖尾效果）
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 设置字体样式
+            ctx.font = fontSize + 'px monospace';
+            ctx.fillStyle = `rgb(${textColor.join(',')})`;
+
+            // 为每一列绘制字符
+            for (let i = 0; i < drops.length; i++) {
+                // 随机生成字符
+                const char = chars.charAt(Math.floor(Math.random() * chars.length));
+
+                // 绘制字符
+                ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+                // 控制字符下落速度
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0; // 重置到顶部
+                }
+                drops[i]++;
+            }
+        }
+
+        // 启动动画循环
+        setInterval(draw, 50);
+    </script>
+</body>
+
+</html>
