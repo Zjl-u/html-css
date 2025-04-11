@@ -1,0 +1,213 @@
+.title {
+    position: absolute;
+    height: 200px;
+}
+
+.title .logo {
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+.title .logo a {
+    color: #36699e;
+    font-size: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.point {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    width: 1200px;
+    border-bottom: 2px solid #36699e;
+}
+
+.background img {
+    position: relative;
+    top: 15px;
+    width: 400px;
+    height: 450px;
+    margin-left: 185px;
+}
+
+.zhuce {
+    position: relative;
+    top: -440px;
+    left: 615px;
+    width: 325px;
+    border: 2px solid #36699e;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* color: #386bb3; */
+}
+
+.denglu {
+    position: relative;
+    right: -255px;
+    top: 60px;
+}
+
+.neirong {
+    padding-left: 20px;
+}
+
+.tijiao {
+    width: 200px;
+    height: 34px;
+    background-color: #36699e;
+    font-size: 14px;
+    color: #fff;
+    margin: 25px 0 0 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.tiaokuan {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0px 0 8 29px;
+}
+
+/* .register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #f0f4f8;
+    /* 降级备用背景 */
+/* } */
+
+/* 动态背景层 */
+/* .background-effects {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+    opacity: 0.7;
+    animation: bgFlow 20s linear infinite; */
+
+/* 双渐变层叠 */
+/* background:
+        repeating-linear-gradient(60deg,
+            rgba(100, 181, 246, 0.2) 0px,
+            rgba(100, 181, 246, 0.2) 40px,
+            transparent 40px,
+            transparent 80px),
+        repeating-linear-gradient(-45deg,
+            rgba(255, 152, 0, 0.15) 0px,
+            rgba(255, 152, 0, 0.15) 40px,
+            transparent 40px,
+            transparent 80px); */
+
+/* 硬件加速优化
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+} */
+
+/* 背景动画 */
+/* @keyframes bgFlow {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-25%, 25%) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(-50%, 0) rotate(0deg);
+    }
+
+    75% {
+        transform: translate(-25%, -25%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+} */
+
+/* 动态波纹效果 */
+/* .background-effects::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle,
+            rgba(33, 150, 243, 0.1) 0%,
+            transparent 70%);
+    transform: translate(-50%, -50%);
+    animation: ripple 8s ease-out infinite;
+}
+
+@keyframes ripple {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3);
+    }
+} */
+
+/* 表单容器 */
+/* .form-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(12px); */
+
+/* 边框渐变效果 */
+/* border: 1px solid rgba(255, 255, 255, 0.3);
+} */
+
+/* 移动端适配 */
+/* @media (max-width: 768px) {
+    .background-effects {
+        animation-duration: 30s;
+        background-size: 80px 80px;
+    }
+
+    .form-wrapper {
+        margin: 1rem;
+        padding: 1.5rem;
+        backdrop-filter: blur(8px);
+    }
+
+    .background-effects::after {
+        width: 300px;
+        height: 300px;
+    }
+} */
+
+/* 性能优化措施 */
+/* @media (prefers-reduced-motion: reduce) {
+
+    .background-effects,
+    .background-effects::after {
+        animation: none !important;
+    }
+
+    .form-wrapper {
+        backdrop-filter: none;
+        background: white;
+    }
+} */

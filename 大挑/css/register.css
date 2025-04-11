@@ -1,0 +1,54 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    position: absolute;
+}
+
+.logo {
+    /* display: inline-block; */
+    position: relative;
+    top: 0px;
+    left: 2px;
+    z-index: 1;
+}
+
+.logo a {
+    display: inline-block;
+    width: 1250px;
+    height: 60px;
+    text-align: center;
+    font-size: 45px;
+    /* font-weight: 700; */
+    color: #fff;
+    background: rgba(69, 154, 200, 0.5);
+}
+
+.donghua1 {
+    border: 1px solid #36699e;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 490px;
+    width: 595px;
+}
+
+.donghua2 {
+    border: 1px solid #36699e;
+    position: relative;
+    top: -470px;
+    left: 645px;
+    height: 235px;
+    width: 585px;
+}
+
+.donghua3 {
+    border: 1px solid #3977ba;
+    position: relative;
+    top: -450px;
+    left: 645px;
+    height: 235px;
+    width: 585px;
+}
